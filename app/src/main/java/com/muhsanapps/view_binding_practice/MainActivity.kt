@@ -37,7 +37,7 @@ class MainActivity : AppCompatActivity() {
             binding.includedLayout.tvIncludeOutput.text = "View Binding in Included layout...."
 
             binding.btnNext.setOnClickListener {
-                val i = Intent(applicationContext, MainListActivity::class.java)
+                val i = Intent(this@MainActivity, MainListActivity::class.java)
                 startActivity(i)
             }
         }
