@@ -1,9 +1,7 @@
 package com.muhsanapps.view_binding_practice
 
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.muhsanapps.view_binding_practice.databinding.UserItemsBinding
 
@@ -29,5 +27,9 @@ class UserListAdapter(private val userList: List<User>) :
     override fun getItemCount(): Int = userList.size
 
     class ViewHolder(val itemBinding: UserItemsBinding): RecyclerView.ViewHolder(itemBinding.root)
+//    {
+//        val tvUserName: TextView = itemView.findViewById(R.id.tv_user_item1)
+//        val tvAge: TextView = itemView.findViewById(R.id.tv_user_item2)
+//    }
 
 }
